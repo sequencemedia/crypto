@@ -1,20 +1,6 @@
 version: 2.1
 
 jobs:
-  lint:
-    docker:
-      - image: cimg/node:lts
-    steps:
-      - checkout
-      - run:
-          name: Authenticate with NPM
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run:
-          name: Install
-          command: npm ci
-      - run:
-          name: Lint
-          command: npm run lint
   publish:
     docker:
       - image: cimg/node:lts
@@ -64,13 +50,7 @@ workflows:
   version: 2
   commit-workflow:
     jobs:
-      - lint:
-          filters:
-            branches:
-              only: master
       - publish:
-          requires:
-            - lint
           filters:
             tags:
               only: /^v.*/
