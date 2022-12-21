@@ -3,6 +3,7 @@
   "version": "1.0.25",
   "main": "./lib/index.cjs",
   "type": "module",
+  "types": "./crypto.d.ts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
