@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/crypto",
-  "version": "1.0.114",
+  "version": "1.0.115",
   "main": "./lib/index.cjs",
   "type": "module",
   "types": "./crypto.d.ts",
