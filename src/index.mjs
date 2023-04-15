@@ -3,7 +3,7 @@ import crypto from 'crypto'
 export function hashKey (key) {
   if (!key) throw new Error('A key is required')
 
-  return crypto.createHash('sha256').update(key).digest('base64').substr(0, 32)
+  return crypto.createHash('sha256').update(key).digest('base64').substring(0, 32)
 }
 
 export function encrypt (buffer, key, algorithm = 'aes-256-ctr') {

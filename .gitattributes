@@ -6,6 +6,7 @@
 *.mjs text eol=lf
 *.cjs text eol=lf
 *.mts text eol=lf
+*.sh text eol=lf
 .editorconfig text eol=lf
 .eslintignore text eol=lf
 .eslintrc text eol=lf
