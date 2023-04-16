@@ -70,10 +70,12 @@ encrypt "./file.txt" > "./encrypted.txt"
 Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a file path to _decrypt_
 
 ```bash
+CRYPTO_KEY='secret'
 file_data=$(decrypt "./encrypted.txt")
 ```
 
 ```bash
+CRYPTO_KEY='secret'
 decrypt "./encrypted.txt" > "./file.txt"
 ```
 
