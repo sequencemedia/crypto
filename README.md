@@ -45,7 +45,7 @@ Both `bytes` and `algorithm` are _optional_
 - `bytes` is the number of bytes to slice from the buffer for the decryption _initialisation vector_. The default is `16`
 - `algorithm` is the algorithm to use for decryption. The default is `aes-256-ctr`
 
-## Bash
+## Bash
 
 Exports two functions, `encrypt` and `decrypt`
 
