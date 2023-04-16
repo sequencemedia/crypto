@@ -1,5 +1,5 @@
 declare module '@sequencemedia/crypto' {
-  export function hashKey(key: string): string
-  export function encode(buffer: Buffer, key: string, secret?: string): Buffer
-  export function decode(buffer: Buffer, key: string, secret?: string): Buffer
+  export function hashKey(secret: string): string
+  export function encrypt(buffer: Buffer, secret: string, bytes?: number, algorithm?: string): Buffer
+  export function decrypt(buffer: Buffer, secret: string, bytes?: number, algorithm?: string): Buffer
 }

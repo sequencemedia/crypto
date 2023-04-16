@@ -1,7 +1,20 @@
 #!/bin/bash
 
-decrypt () {
-  node ./src/shell/decrypt.mjs < "$1"
-}
+source ./crypto.sh
 
-export -f decrypt
+get_args "$@";
+
+if [[ -z "$ORIGIN" ]];
+then
+  echo Origin is required
+  exit 1
+fi
+
+if [[ -z "$DESTINATION" ]];
+then
+  echo Destination is required
+  exit 1
+fi
+
+decrypt "$ORIGIN" > "$DESTINATION"
+exit 0
