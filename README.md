@@ -58,10 +58,12 @@ source ./crypto.sh
 Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a file path to _encrypt_
 
 ```bash
+CRYPTO_KEY='secret'
 encrypted_file_data=$(encrypt "./file.txt")
 ```
 
 ```bash
+CRYPTO_KEY='secret'
 encrypt "./file.txt" > "./encrypted.txt"
 ```
 
