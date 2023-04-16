@@ -77,7 +77,7 @@ file_data=$(decrypt "./encrypted.txt")
 decrypt "./encrypted.txt" > "./file.txt"
 ```
 
-## Bash utilities
+## Bash scripts
 
 ### `encrypt.sh`
 
