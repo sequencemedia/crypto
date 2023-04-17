@@ -4,6 +4,16 @@
   "main": "./lib/index.cjs",
   "type": "module",
   "types": "./crypto.d.ts",
+  "keywords": [
+    "crypto",
+    "node",
+    "bash",
+    "encrypt",
+    "decrypt",
+    "encode",
+    "decode",
+    "shell"
+  ],
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
