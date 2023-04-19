@@ -13,7 +13,7 @@
   ],
   "main": "./lib/index.cjs",
   "type": "module",
-  "types": "./crypto.d.ts",
+  "types": "./crypto.d.mts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
