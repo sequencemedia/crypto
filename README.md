@@ -16,7 +16,12 @@ import {
 ### `encrypt`
 
 ```typescript
-function encrypt(buffer: Buffer, secret: string, bytes?: number, algorithm?: string): Buffer
+function encrypt(
+  buffer: Buffer,
+  secret: string,
+  bytes?: number,
+  algorithm?: string
+): Buffer
 ```
 
 Only `buffer` and `secret` are _required_
@@ -32,7 +37,12 @@ Both `bytes` and `algorithm` are _optional_
 ### `decrypt`
 
 ```typescript
-function decrypt(buffer: Buffer, secret: string, bytes?: number, algorithm?: string): Buffer
+function decrypt(
+  buffer: Buffer,
+  secret: string,
+  bytes?: number,
+  algorithm?: string
+): Buffer
 ```
 
 Only `buffer` and `secret` are _required_
@@ -91,7 +101,10 @@ Requires `CRYPTO_KEY` as a _variable_ in the Bash environment
 - A file _destination_ path to put the encrypted data
 
 ```bash
-CRYPTO_KEY='secret' ./encrypt.sh --origin "./file.txt" --destination "./encrypted.txt"
+CRYPTO_KEY='secret'
+./encrypt.sh \
+  --origin "./file.txt" \
+  --destination "./encrypted.txt"
 ```
 
 ### `decrypt.sh`
@@ -102,5 +115,8 @@ Requires `CRYPTO_KEY` as a _variable_ in the Bash environment
 - A file _destination_ path to put the decrypted data
 
 ```bash
-CRYPTO_KEY='secret' ./decrypt.sh --origin "./encrypted.txt" --destination "./file.txt"
+CRYPTO_KEY='secret'
+./decrypt.sh \
+  --origin "./encrypted.txt" \
+  --destination "./file.txt"
 ```
