@@ -4,7 +4,7 @@ Encrypt and decrypt in Node and Bash
 
 ## Node
 
-Exports two functions, `encrypt` and `decrypt`
+The package _main_ exports two functions, `encrypt` and `decrypt`
 
 ```javascript
 import {
@@ -57,13 +57,28 @@ Both `bytes` and `algorithm` are _optional_
 
 ## Bash
 
-Exports two functions, `encrypt` and `decrypt`
+The package contains three scripts
+
+1. `crypto.sh`
+1. `encrypt.sh`
+2. `decrypt.sh`
+
+Script `crypto.sh` exports four functions to consume in your own Bash scripts
 
 ```bash
 source ./crypto.sh
 ```
 
-### `encrypt`
+1. `encrypt`
+2. `decrypt`
+3. `encrypt_directory`
+4. `decrypt_directory`
+
+Scripts [`encrypt.sh`](#encryptsh) and [`decrypt.sh`](#decryptsh) can be executed at the command line
+
+### Bash functions
+
+#### `encrypt`
 
 Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a file path to _encrypt_
 
@@ -77,7 +92,7 @@ CRYPTO_KEY='secret'
 encrypt "./file.txt" > "./encrypted.txt"
 ```
 
-### `decrypt`
+#### `decrypt`
 
 Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a file path to _decrypt_
 
@@ -91,32 +106,86 @@ CRYPTO_KEY='secret'
 decrypt "./encrypted.txt" > "./file.txt"
 ```
 
-## Bash scripts
+#### `encrypt_directory`
 
-### `encrypt.sh`
+Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a directory path to _encrypt_
 
-Requires `CRYPTO_KEY` as a _variable_ in the Bash environment
-
-- A file _origin_ path for data to _encrypt_
-- A file _destination_ path to put the encrypted data
+- The first argument is the origin directory of files to _encrypt_
+- The second argument is the destination directory for the _encrypted_ files
 
 ```bash
 CRYPTO_KEY='secret'
-./encrypt.sh \
+encrypt_directory "./directory" "./encrypted"
+```
+
+#### `decrypt_directory`
+
+Requires `CRYPTO_KEY` as a _variable_ in the Bash environment and a directory path to _decrypt_
+
+- The first argument is the origin directory of files to _decrypt_
+- The second argument is the destination directory for the _decrypted_ files
+
+```bash
+CRYPTO_KEY='secret'
+decrypt_directory "./encrypted" "./directory"
+```
+
+### Bash scripts
+
+#### `encrypt.sh`
+
+Requires `CRYPTO_KEY` as a _variable_ in the Bash environment
+
+- You can provide either _file_ or _directory_ paths
+- You can provide `--verbose` or `-v`
+
+##### File paths
+
+- A file _origin_ path to _encrypt_
+- A file _destination_ path for the _encrypted_ file
+
+```bash
+CRYPTO_KEY='secret' ./encrypt.sh \
   --origin "./file.txt" \
   --destination "./encrypted.txt"
 ```
 
-### `decrypt.sh`
+##### Directory paths
+
+- A directory _origin_ path to _encrypt_
+- A directory _destination_ path for _encrypted_ files
+
+```bash
+CRYPTO_KEY='secret' ./encrypt.sh \
+  --origin "./directory" \
+  --destination "./encrypted"
+```
+
+#### `decrypt.sh`
 
 Requires `CRYPTO_KEY` as a _variable_ in the Bash environment
 
-- A file _origin_ path for data to _decrypt_
-- A file _destination_ path to put the decrypted data
+- You can provide either _file_ or _directory_ paths
+- You can provide `--verbose` or `-v`
+
+##### File paths
+
+- A file _origin_ path to _decrypt_
+- A file _destination_ path for the _decrypted_ file
 
 ```bash
-CRYPTO_KEY='secret'
-./decrypt.sh \
+CRYPTO_KEY='secret' ./decrypt.sh \
   --origin "./encrypted.txt" \
   --destination "./file.txt"
+```
+
+##### Directory paths
+
+- A directory _origin_ path to _decrypt_
+- A directory _destination_ path for _decrypted_ files
+
+```bash
+CRYPTO_KEY='secret' ./decrypt.sh \
+  --origin "./encrypted" \
+  --destination "./directory"
 ```
