@@ -26,6 +26,15 @@ then
     echo Origin is a directory but destination is not a directory
     exit 1
   fi
+else
+  if [ -f "$ORIGIN" ];
+  then
+    if [ -d "$DESTINATION" ];
+    then
+      echo Origin is a file but destination is a directory
+      exit 1
+    fi
+  fi
 fi
 
 decrypt "$ORIGIN" > "$DESTINATION"
