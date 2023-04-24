@@ -18,13 +18,14 @@ fi
 
 if [ -d "$ORIGIN" ];
 then
-  if [ -d "$DESTINATION" ];
+  if [ -f "$DESTINATION" ];
   then
+    echo Origin is a directory but destination is a file
+    exit 1
+  else
+    mkdir -p "$DESTINATION" 2> /dev/null
     encrypt_directory "$ORIGIN" "$DESTINATION"
     exit 0
-  else
-    echo Origin is a directory but destination is not a directory
-    exit 1
   fi
 else
   if [ -f "$ORIGIN" ];
@@ -33,9 +34,12 @@ else
     then
       echo Origin is a file but destination is a directory
       exit 1
+    else
+      encrypt "$ORIGIN" > "$DESTINATION"
+      exit 0
     fi
   fi
 fi
 
-encrypt "$ORIGIN" > "$DESTINATION"
-exit 0
+echo Origin is neither a file nor a directory
+exit 1

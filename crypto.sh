@@ -35,7 +35,7 @@ get_args () {
         VERBOSE=true
         ;;
       *)
-        echo Ignoring "$flag"
+        # Ignoring "$flag"
         ;;
     esac
   done
