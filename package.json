@@ -11,7 +11,7 @@
     "decode",
     "shell"
   ],
-  "main": "./lib/index.cjs",
+  "main": "./src/index.mjs",
   "type": "module",
   "types": "./crypto.d.mts",
   "author": {
@@ -25,12 +25,6 @@
     "url": "git@github.com:sequencemedia/crypto.git"
   },
   "scripts": {
-    "build": "npm run babel",
-    "watch": "npm run babel -- -w",
-    "clean": "rimraf lib",
-    "babel": "babel src -d lib --out-file-extension .cjs",
-    "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean",
     "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install"
@@ -51,7 +45,6 @@
     "husky": "^8.0.3"
   },
   "exports": {
-    "import": "./src/index.mjs",
-    "require": "./lib/index.cjs"
+    ".": "./src/index.mjs"
   }
 }
