@@ -30,10 +30,10 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.9",
-    "@babel/core": "^7.22.9",
-    "@babel/eslint-parser": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
     "@sequencemedia/hooks": "^1.0.444",
     "@types/node": "^20.4.8",
     "core-js": "^3.32.0",
