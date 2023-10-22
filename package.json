@@ -39,7 +39,7 @@
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.23.2",
-    "@sequencemedia/hooks": "^1.0.458",
+    "@sequencemedia/hooks": "^1.0.459",
     "@types/node": "^20.8.7",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
