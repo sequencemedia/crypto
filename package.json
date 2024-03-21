@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.1",
+    "@babel/core": "^7.24.3",
     "@babel/eslint-parser": "^7.24.1",
-    "@babel/preset-env": "^7.24.1",
-    "@sequencemedia/hooks": "^1.0.484",
+    "@babel/preset-env": "^7.24.3",
+    "@sequencemedia/hooks": "^1.0.485",
     "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
@@ -48,7 +48,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "husky": "^9.0.11",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "exports": {
     ".": "./src/index.mjs"
