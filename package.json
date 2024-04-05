@@ -39,7 +39,7 @@
     "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.24.1",
     "@babel/preset-env": "^7.24.4",
-    "@sequencemedia/hooks": "^1.0.486",
+    "@sequencemedia/hooks": "^1.0.487",
     "@types/node": "^20.12.4",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
@@ -48,7 +48,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "husky": "^9.0.11",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   },
   "exports": {
     ".": "./src/index.mjs"
