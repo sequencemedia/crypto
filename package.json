@@ -35,20 +35,20 @@
     "types": "tsc src/**/*.mjs --declaration --allowJs --emitDeclarationOnly"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.6",
-    "@babel/core": "^7.24.6",
-    "@babel/eslint-parser": "^7.24.6",
-    "@babel/preset-env": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.494",
-    "@types/node": "^20.13.0",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@sequencemedia/hooks": "^1.0.495",
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "core-js": "^3.37.1",
     "eslint": "8.57.0",
+    "eslint-config-love": "47.0.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
     "husky": "^9.0.11",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   },
   "exports": {
     ".": "./src/index.mjs"
