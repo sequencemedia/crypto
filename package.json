@@ -35,11 +35,11 @@
     "types": "tsc src/**/*.mjs --declaration --allowJs --emitDeclarationOnly"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.8",
+    "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.4",
-    "@sequencemedia/hooks": "^1.0.539",
+    "@sequencemedia/hooks": "^1.0.540",
     "@types/node": "^22.5.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
