@@ -4,7 +4,7 @@ import crypto from 'node:crypto'
  * @param {string} secret
  * @returns {string}
  */
-export function hashKey (secret) {
+function hashKey (secret) {
   if (!secret) throw new Error('A secret is required')
 
   return crypto.createHash('sha256').update(secret).digest('base64').substring(0, 32)
