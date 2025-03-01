@@ -1,6 +1,4 @@
 #!/bin/sh
 
 npm run lint:js
-npm run types
-npm run lint:ts:fix
-git add src/**/*.d.mts
+npm run lint:ts

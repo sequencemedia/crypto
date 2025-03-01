@@ -9,12 +9,12 @@ const {
     CRYPTO_KEY
   } = {},
   stdout,
-  openStdin
+  stdin
 } = process
 
 let collector = Buffer.from('')
 
-openStdin()
+stdin
   .on('data', (buffer) => {
     collector = Buffer.concat([collector, buffer])
   })

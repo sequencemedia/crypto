@@ -11,9 +11,9 @@
     "decode",
     "shell"
   ],
-  "main": "./src/index.mjs",
+  "main": "./index.mjs",
   "type": "module",
-  "types": "./crypto.d.mts",
+  "types": "./index.d.mts",
   "author": {
     "name": "Jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
@@ -31,8 +31,7 @@
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:ts": "eslint . --ext .mts,.cts",
     "lint:ts:fix": "npm run lint:ts -- --fix",
-    "prepare": "husky",
-    "types": "tsc src/**/*.mjs --declaration --allowJs --emitDeclarationOnly"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
@@ -45,10 +44,6 @@
     "eslint": "8.57.1",
     "eslint-config-love": "47.0.0",
     "eslint-config-standard": "^17.1.0",
-    "husky": "^9.1.7",
-    "typescript": "^5.7.3"
-  },
-  "exports": {
-    ".": "./src/index.mjs"
+    "husky": "^9.1.7"
   }
 }

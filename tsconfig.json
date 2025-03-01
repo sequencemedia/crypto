@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
+    "module": "NodeNext",
+    "target": "ESNext",
     "allowJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationMap": true,
-    "strictNullChecks": true
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "baseUrl": "."
   }
 }
