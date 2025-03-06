@@ -30,8 +30,8 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.38",
-    "@sequencemedia/eslint-config-typescript": "^0.1.55",
+    "@sequencemedia/eslint-config-standard": "^0.2.39",
+    "@sequencemedia/eslint-config-typescript": "^0.1.56",
     "@types/node": "^22.13.9",
     "eslint": "^9.21.0",
     "eslint-plugin-jsdoc": "^50.6.3",
