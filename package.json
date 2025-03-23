@@ -34,7 +34,7 @@
     "@sequencemedia/eslint-config-typescript": "^0.1.65",
     "@types/node": "^22.13.11",
     "eslint": "^9.23.0",
-    "eslint-plugin-jsdoc": "^50.6.8",
+    "eslint-plugin-jsdoc": "^50.6.9",
     "globals": "^16.0.0",
     "husky": "^9.1.7"
   }
