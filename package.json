@@ -32,7 +32,7 @@
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.44",
     "@sequencemedia/eslint-config-typescript": "^0.1.65",
-    "@types/node": "^22.13.11",
+    "@types/node": "^22.13.13",
     "eslint": "^9.23.0",
     "eslint-plugin-jsdoc": "^50.6.9",
     "globals": "^16.0.0",
