@@ -33,7 +33,7 @@
     "@sequencemedia/eslint-config-standard": "^0.2.50",
     "@sequencemedia/eslint-config-typescript": "^0.1.78",
     "@sequencemedia/eslint-merge": "^0.0.20",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.3",
     "eslint": "^9.25.1",
     "eslint-plugin-jsdoc": "^50.6.11",
     "globals": "^16.0.0",
