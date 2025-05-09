@@ -1,8 +1,8 @@
 import crypto from 'node:crypto'
 
 /**
- * @param {string} secret
- * @returns {string}
+ *  @param {string} secret
+ *  @returns {string}
  */
 function hashKey (secret) {
   if (!secret) throw new Error('A secret is required')
@@ -11,11 +11,11 @@ function hashKey (secret) {
 }
 
 /**
- * @param {Buffer} buffer
- * @param {string} secret
- * @param {number} [bytes]
- * @param {string} [algorithm]
- * @returns {Buffer}
+ *  @param {Buffer} buffer
+ *  @param {string} secret
+ *  @param {number} [bytes]
+ *  @param {string} [algorithm]
+ *  @returns {Buffer}
  */
 export function encrypt (buffer, secret, bytes = 16, algorithm = 'aes-256-ctr') {
   const iv = crypto.randomBytes(bytes)
@@ -24,11 +24,11 @@ export function encrypt (buffer, secret, bytes = 16, algorithm = 'aes-256-ctr') 
 }
 
 /**
- * @param {Buffer} buffer
- * @param {string} secret
- * @param {number} [bytes]
- * @param {string} [algorithm]
- * @returns {Buffer}
+ *  @param {Buffer} buffer
+ *  @param {string} secret
+ *  @param {number} [bytes]
+ *  @param {string} [algorithm]
+ *  @returns {Buffer}
  */
 export function decrypt (buffer, secret, bytes = 16, algorithm = 'aes-256-ctr') {
   const iv = buffer.slice(0, bytes)
