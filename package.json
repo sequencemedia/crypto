@@ -31,11 +31,11 @@
   },
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.69",
-    "@sequencemedia/eslint-config-typescript": "^0.1.109",
+    "@sequencemedia/eslint-config-typescript": "^0.1.110",
     "@sequencemedia/eslint-merge": "^0.0.33",
-    "@types/node": "^24.0.3",
+    "@types/node": "^24.0.4",
     "eslint": "^9.29.0",
-    "eslint-plugin-jsdoc": "^51.2.2",
+    "eslint-plugin-jsdoc": "^51.2.3",
     "globals": "^16.2.0",
     "husky": "^9.1.7"
   }
