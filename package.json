@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.72",
-    "@sequencemedia/eslint-config-typescript": "^0.1.124",
-    "@sequencemedia/eslint-merge": "^0.0.42",
+    "@sequencemedia/eslint-config-typescript": "^0.1.125",
+    "@sequencemedia/eslint-merge": "^0.0.43",
     "@types/node": "^24.1.0",
     "eslint": "^9.31.0",
     "eslint-plugin-jsdoc": "^51.4.1",
