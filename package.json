@@ -30,12 +30,12 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.82",
-    "@sequencemedia/eslint-config-typescript": "^0.1.141",
-    "@sequencemedia/eslint-merge": "^0.0.50",
-    "@types/node": "^24.5.1",
+    "@sequencemedia/eslint-config-standard": "^0.2.83",
+    "@sequencemedia/eslint-config-typescript": "^0.1.142",
+    "@sequencemedia/eslint-merge": "^0.0.51",
+    "@types/node": "^24.5.2",
     "eslint": "^9.35.0",
-    "eslint-plugin-jsdoc": "^58.1.0",
+    "eslint-plugin-jsdoc": "^58.1.1",
     "globals": "^16.4.0",
     "husky": "^9.1.7"
   }
