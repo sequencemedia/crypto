@@ -30,12 +30,12 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.90",
-    "@sequencemedia/eslint-config-typescript": "^0.1.155",
+    "@sequencemedia/eslint-config-standard": "^0.2.91",
+    "@sequencemedia/eslint-config-typescript": "^0.1.156",
     "@sequencemedia/eslint-merge": "^0.0.56",
-    "@types/node": "^24.7.1",
+    "@types/node": "^24.7.2",
     "eslint": "^9.37.0",
-    "eslint-plugin-jsdoc": "^61.1.0",
+    "eslint-plugin-jsdoc": "^61.1.1",
     "globals": "^16.4.0",
     "husky": "^9.1.7"
   }
