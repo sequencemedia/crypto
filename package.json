@@ -32,10 +32,10 @@
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.100",
     "@sequencemedia/eslint-config-typescript": "^0.1.173",
-    "@sequencemedia/eslint-merge": "^0.0.62",
+    "@sequencemedia/eslint-merge": "^0.0.63",
     "@types/node": "^24.10.0",
     "eslint": "9.38.0",
-    "eslint-plugin-jsdoc": "^61.1.11",
+    "eslint-plugin-jsdoc": "^61.1.12",
     "globals": "^16.5.0",
     "husky": "^9.1.7"
   }
