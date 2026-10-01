@@ -30,7 +30,7 @@
     "prepare": "node husky.mjs"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.127",
+    "@sequencemedia/eslint-config-standard": "^0.2.129",
     "@sequencemedia/eslint-config-typescript": "^0.1.221",
     "@sequencemedia/eslint-merge": "^0.0.93",
     "@types/node": "^26.6.3",
